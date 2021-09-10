@@ -1,0 +1,66 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Color Coded_ScaleFactor":"1.0",
+   "Color Coded_TopLeft":"-400,-78",
+   "Default View_ScaleFactor":"0.762705",
+   "Default View_TopLeft":"-10,-30",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace inst ALU -pg 1 -lvl 4 -x 1240 -y 190 -defaultsOSRD
+preplace inst SR2MUX -pg 1 -lvl 3 -x 970 -y 220 -defaultsOSRD
+preplace inst REG_FILE -pg 1 -lvl 1 -x 390 -y 230 -defaultsOSRD
+preplace inst SEXT4 -pg 1 -lvl 2 -x 690 -y 330 -defaultsOSRD
+preplace inst IR -pg 1 -lvl 1 -x 390 -y 520 -defaultsOSRD
+preplace inst ZEXT_LSHF1 -pg 1 -lvl 2 -x 690 -y 900 -defaultsOSRD
+preplace inst MARMUX -pg 1 -lvl 6 -x 1790 -y 560 -defaultsOSRD
+preplace inst ADDR_ADDER -pg 1 -lvl 5 -x 1500 -y 560 -defaultsOSRD
+preplace inst ZERO -pg 1 -lvl 2 -x 690 -y 430 -defaultsOSRD
+preplace inst ADDR2MUX -pg 1 -lvl 3 -x 970 -y 550 -defaultsOSRD
+preplace inst SEXT5 -pg 1 -lvl 2 -x 690 -y 540 -defaultsOSRD -resize 180 88
+preplace inst SEXT8 -pg 1 -lvl 2 -x 690 -y 650 -defaultsOSRD
+preplace inst SEXT10 -pg 1 -lvl 2 -x 690 -y 750 -defaultsOSRD
+preplace inst LSHF1 -pg 1 -lvl 4 -x 1240 -y 560 -defaultsOSRD
+preplace inst ADDR1MUX -pg 1 -lvl 4 -x 1240 -y 730 -defaultsOSRD
+preplace inst PCMUX -pg 1 -lvl 6 -x 1790 -y 370 -defaultsOSRD
+preplace inst PC -pg 1 -lvl 7 -x 2070 -y 300 -defaultsOSRD
+preplace inst ADD_TWO -pg 1 -lvl 8 -x 2330 -y 360 -defaultsOSRD
+preplace inst CC_LOGIC -pg 1 -lvl 1 -x 390 -y 1020 -defaultsOSRD
+preplace inst CC -pg 1 -lvl 2 -x 690 -y 1020 -defaultsOSRD
+preplace inst SHIFTER -pg 1 -lvl 2 -x 690 -y 40 -defaultsOSRD
+preplace inst bus_driver_0 -pg 1 -lvl 9 -x 2610 -y 350 -defaultsOSRD
+preplace inst MDR_IN_LOGIC -pg 1 -lvl 2 -x 690 -y 1170 -defaultsOSRD
+preplace inst MIO_EN -pg 1 -lvl 3 -x 970 -y 1200 -defaultsOSRD
+preplace inst MDR -pg 1 -lvl 4 -x 1240 -y 1180 -defaultsOSRD
+preplace netloc ADDR2MUX_result 1 3 1 N 550
+preplace netloc ADDR_ADDER_result 1 5 1 1630 390n
+preplace netloc ADD_TWO_out 1 5 4 1630 260 1930J 570 NJ 570 2440
+preplace netloc ALU_result 1 4 5 NJ 190 NJ 190 NJ 190 NJ 190 2450
+preplace netloc IR_result 1 1 1 540 50n
+preplace netloc MARMUX_result 1 6 3 NJ 560 2200J 260 N
+preplace netloc Net 1 0 10 10 340 530 270 830 300 N 300 N 300 1620 270 1910 580 N 580 N 580 2740
+preplace netloc PCMUX_result 1 6 1 1920 320n
+preplace netloc PC_result 1 7 2 2190 300 N
+preplace netloc SEXT8_out 1 2 1 810 570n
+preplace netloc SHIFTER_out 1 2 7 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 2460
+preplace netloc SR2MUX_result 1 3 1 1100 210n
+preplace netloc ZEXT_LSHF1_result 1 2 4 820J 400 N 400 N 400 1620
+preplace netloc cc_logic_0_out 1 1 1 520 1020n
+preplace netloc lshf1_0_out 1 4 1 N 560
+preplace netloc mux_2_0_result 1 4 1 1360 580n
+preplace netloc reg_file_0_sr1_out 1 1 3 530J 140 NJ 140 1090
+preplace netloc reg_file_0_sr2_out 1 1 2 NJ 240 810
+preplace netloc sext_10_0_out 1 2 1 830 590n
+preplace netloc sext_4_0_result 1 2 1 820J 240n
+preplace netloc sext_5_0_out 1 2 1 810J 540n
+preplace netloc xlconstant_0_dout 1 2 4 810 450 N 450 1360 410 N
+preplace netloc MDR_IN_LOGIC_result 1 2 1 820 1170n
+preplace netloc MIO_EN_result 1 3 1 N 1200
+levelinfo -pg 1 -10 390 690 970 1240 1500 1790 2070 2330 2610 2760
+pagesize -pg 1 -db -bbox -sgen -10 -120 2760 1380
+"
+}
+{
+   "da_board_cnt":"8",
+   "da_clkrst_cnt":"9"
+}
