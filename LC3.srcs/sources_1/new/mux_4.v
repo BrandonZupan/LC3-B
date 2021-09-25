@@ -21,7 +21,7 @@
 
 
 module mux_4(
-    input [2:0] sel,
+    input [1:0] sel,
     input [15:0] in0,
     input [15:0] in1,
     input [15:0] in2,

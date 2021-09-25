@@ -48,11 +48,37 @@ module tb_mdr_out_logic;
         #50
         
         // byte in 7:0
+        data_size = 0;  // byte
+        mar_lsb = 0;    // 7:0
+        #50
+        if (result != 'h0034) $display("Test 0 FAIL");
+        
+        // byte in 15:8
         data_size = 0;
+        mar_lsb = 1;
+        #50
+        if (result != 'h0012) $display("Test 1 FAIL");
+        
+        // full word
+        data_size = 1;
         mar_lsb = 0;
         #50
-        if (result !=
+        if (result != 'h1234) $display("Test 2 FAIL");
         
+        // test sign extend
+        in = 'h8080;
+        
+        // byte in 7:0
+        data_size = 0;  // byte
+        mar_lsb = 0;    // 7:0
+        #50
+        if (result != 'hFF80) $display("Test 3 FAIL");
+        
+        // byte in 15:8
+        data_size = 0;
+        mar_lsb = 1;
+        #50
+        if (result != 'hFF80) $display("Test 1 FAIL");
     
     
     

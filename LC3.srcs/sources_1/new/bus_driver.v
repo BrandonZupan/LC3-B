@@ -31,18 +31,18 @@ module bus_driver(
     input alu_sel,
     input[15:0] mdr,
     input mdr_sel,
-    output reg [15:0] out
+    output reg [15:0] result
     );
     
     always @(*) begin
     
-        if (marmux_sel == 'b1) out = marmux;
-        else if (pc_sel == 'b1) out = pc;
-        else if (shf_sel == 'b1) out = shf;
-        else if (alu_sel == 'b1) out = alu;
-        else if (mdr_sel == 'b1) out = mdr;
+        if (marmux_sel == 'b1) result = marmux;
+        else if (pc_sel == 'b1) result = pc;
+        else if (shf_sel == 'b1) result = shf;
+        else if (alu_sel == 'b1) result = alu;
+        else if (mdr_sel == 'b1) result = mdr;
         
-        else out = 'hZZZZ;
+        else result = 'hZZZZ;
         
     
     

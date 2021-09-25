@@ -44,25 +44,25 @@ module tb_mdr_in_logic;
         
         in = 'h1234;
         data_size = 0;
-        mar_lsb = 0;
+        // mar_lsb = 0;
         
         #50
         
         // byte in [7:0]
         data_size = 0;
-        mar_lsb = 0;
+        // mar_lsb = 0;
         #50
-        if ( result != 'h0034) $display("Test 0 FAIL");
+        if ( result != 'h3434) $display("Test 0 FAIL");
         
         // byte in [15:8]
         data_size = 0;
-        mar_lsb = 1;
+        // mar_lsb = 1;
         #50
-        if ( result != 'h3400) $display("Test 1 FAIL");
+        if ( result != 'h3434) $display("Test 1 FAIL");
         
         // word in [15:0]
         data_size = 1;
-        mar_lsb = 0;
+        // mar_lsb = 0;
         #50
         if ( result != 'h1234) $display("Test 2 FAIL");
         

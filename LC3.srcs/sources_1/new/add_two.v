@@ -21,10 +21,10 @@
 
 
 module add_two(
-    input [15:0] in,
-    output [15:0] out
+    input [15:0] in0,
+    output [15:0] result
     );
     
-    assign out = in + 2;
+    assign result = in0 + 2;
     
 endmodule

@@ -22,9 +22,9 @@
 
 module sext_10(
     input [10:0] in0,
-    output [15:0] out
+    output [15:0] result
     );
     
-    assign out = in0[10] ? (16'b1111100000000000 | in0) : (16'b0000011111111111 & in0);
+    assign result = in0[10] ? (16'b1111100000000000 | in0) : (16'b0000011111111111 & in0);
     
 endmodule

@@ -2,65 +2,141 @@
    "ActiveEmotionalView":"Default View",
    "Color Coded_ScaleFactor":"1.0",
    "Color Coded_TopLeft":"-400,-78",
-   "Default View_ScaleFactor":"0.762705",
-   "Default View_TopLeft":"-10,-30",
+   "Default View_ScaleFactor":"0.912044",
+   "Default View_TopLeft":"981,218",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
-preplace inst ALU -pg 1 -lvl 4 -x 1240 -y 190 -defaultsOSRD
-preplace inst SR2MUX -pg 1 -lvl 3 -x 970 -y 220 -defaultsOSRD
-preplace inst REG_FILE -pg 1 -lvl 1 -x 390 -y 230 -defaultsOSRD
-preplace inst SEXT4 -pg 1 -lvl 2 -x 690 -y 330 -defaultsOSRD
-preplace inst IR -pg 1 -lvl 1 -x 390 -y 520 -defaultsOSRD
-preplace inst ZEXT_LSHF1 -pg 1 -lvl 2 -x 690 -y 900 -defaultsOSRD
-preplace inst MARMUX -pg 1 -lvl 6 -x 1790 -y 560 -defaultsOSRD
-preplace inst ADDR_ADDER -pg 1 -lvl 5 -x 1500 -y 560 -defaultsOSRD
-preplace inst ZERO -pg 1 -lvl 2 -x 690 -y 430 -defaultsOSRD
-preplace inst ADDR2MUX -pg 1 -lvl 3 -x 970 -y 550 -defaultsOSRD
-preplace inst SEXT5 -pg 1 -lvl 2 -x 690 -y 540 -defaultsOSRD -resize 180 88
-preplace inst SEXT8 -pg 1 -lvl 2 -x 690 -y 650 -defaultsOSRD
-preplace inst SEXT10 -pg 1 -lvl 2 -x 690 -y 750 -defaultsOSRD
-preplace inst LSHF1 -pg 1 -lvl 4 -x 1240 -y 560 -defaultsOSRD
-preplace inst ADDR1MUX -pg 1 -lvl 4 -x 1240 -y 730 -defaultsOSRD
-preplace inst PCMUX -pg 1 -lvl 6 -x 1790 -y 370 -defaultsOSRD
-preplace inst PC -pg 1 -lvl 7 -x 2070 -y 300 -defaultsOSRD
-preplace inst ADD_TWO -pg 1 -lvl 8 -x 2330 -y 360 -defaultsOSRD
-preplace inst CC_LOGIC -pg 1 -lvl 1 -x 390 -y 1020 -defaultsOSRD
-preplace inst CC -pg 1 -lvl 2 -x 690 -y 1020 -defaultsOSRD
-preplace inst SHIFTER -pg 1 -lvl 2 -x 690 -y 40 -defaultsOSRD
-preplace inst bus_driver_0 -pg 1 -lvl 9 -x 2610 -y 350 -defaultsOSRD
-preplace inst MDR_IN_LOGIC -pg 1 -lvl 2 -x 690 -y 1170 -defaultsOSRD
-preplace inst MIO_EN -pg 1 -lvl 3 -x 970 -y 1200 -defaultsOSRD
-preplace inst MDR -pg 1 -lvl 4 -x 1240 -y 1180 -defaultsOSRD
-preplace netloc ADDR2MUX_result 1 3 1 N 550
-preplace netloc ADDR_ADDER_result 1 5 1 1630 390n
-preplace netloc ADD_TWO_out 1 5 4 1630 260 1930J 570 NJ 570 2440
-preplace netloc ALU_result 1 4 5 NJ 190 NJ 190 NJ 190 NJ 190 2450
-preplace netloc IR_result 1 1 1 540 50n
-preplace netloc MARMUX_result 1 6 3 NJ 560 2200J 260 N
-preplace netloc Net 1 0 10 10 340 530 270 830 300 N 300 N 300 1620 270 1910 580 N 580 N 580 2740
-preplace netloc PCMUX_result 1 6 1 1920 320n
-preplace netloc PC_result 1 7 2 2190 300 N
-preplace netloc SEXT8_out 1 2 1 810 570n
-preplace netloc SHIFTER_out 1 2 7 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 2460
-preplace netloc SR2MUX_result 1 3 1 1100 210n
-preplace netloc ZEXT_LSHF1_result 1 2 4 820J 400 N 400 N 400 1620
-preplace netloc cc_logic_0_out 1 1 1 520 1020n
-preplace netloc lshf1_0_out 1 4 1 N 560
-preplace netloc mux_2_0_result 1 4 1 1360 580n
-preplace netloc reg_file_0_sr1_out 1 1 3 530J 140 NJ 140 1090
-preplace netloc reg_file_0_sr2_out 1 1 2 NJ 240 810
-preplace netloc sext_10_0_out 1 2 1 830 590n
-preplace netloc sext_4_0_result 1 2 1 820J 240n
-preplace netloc sext_5_0_out 1 2 1 810J 540n
-preplace netloc xlconstant_0_dout 1 2 4 810 450 N 450 1360 410 N
-preplace netloc MDR_IN_LOGIC_result 1 2 1 820 1170n
-preplace netloc MIO_EN_result 1 3 1 N 1200
-levelinfo -pg 1 -10 390 690 970 1240 1500 1790 2070 2330 2610 2760
-pagesize -pg 1 -db -bbox -sgen -10 -120 2760 1380
+preplace port port-id_clk -pg 1 -lvl 0 -x -90 -y -210 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x -90 -y -70 -defaultsOSRD
+preplace inst ALU -pg 1 -lvl 7 -x 2550 -y 190 -defaultsOSRD
+preplace inst SR2MUX -pg 1 -lvl 6 -x 2250 -y 220 -defaultsOSRD
+preplace inst REG_FILE -pg 1 -lvl 3 -x 1100 -y 250 -defaultsOSRD
+preplace inst SEXT4 -pg 1 -lvl 2 -x 770 -y 360 -defaultsOSRD
+preplace inst IR -pg 1 -lvl 1 -x 370 -y 520 -defaultsOSRD
+preplace inst ZEXT_LSHF1 -pg 1 -lvl 2 -x 770 -y 910 -defaultsOSRD
+preplace inst MARMUX -pg 1 -lvl 9 -x 3150 -y 560 -defaultsOSRD
+preplace inst ADDR_ADDER -pg 1 -lvl 8 -x 2840 -y 560 -defaultsOSRD
+preplace inst ZERO -pg 1 -lvl 2 -x 770 -y 460 -defaultsOSRD
+preplace inst SEXT8 -pg 1 -lvl 2 -x 770 -y 680 -defaultsOSRD
+preplace inst ADDR1MUX -pg 1 -lvl 7 -x 2550 -y 730 -defaultsOSRD
+preplace inst PC -pg 1 -lvl 10 -x 3470 -y 300 -defaultsOSRD
+preplace inst CC -pg 1 -lvl 2 -x 770 -y 1030 -defaultsOSRD
+preplace inst MIO_EN -pg 1 -lvl 6 -x 2250 -y 1200 -defaultsOSRD
+preplace inst MDR -pg 1 -lvl 7 -x 2550 -y 1180 -defaultsOSRD
+preplace inst MAR -pg 1 -lvl 1 -x 370 -y 1340 -defaultsOSRD
+preplace inst MEMORY -pg 1 -lvl 8 -x 2840 -y 1420 -defaultsOSRD
+preplace inst WE_LOGIC -pg 1 -lvl 2 -x 770 -y 1360 -defaultsOSRD
+preplace inst we_concat -pg 1 -lvl 6 -x 2250 -y 1470 -defaultsOSRD
+preplace inst MICROSEQUENCER -pg 1 -lvl 2 -x 770 -y 1650 -defaultsOSRD
+preplace inst CONTROL_STORE -pg 1 -lvl 3 -x 1100 -y 1660 -defaultsOSRD
+preplace inst MICROINSTRUCTION -pg 1 -lvl 5 -x 1670 -y 1810 -defaultsOSRD
+preplace inst ADDR2MUX -pg 1 -lvl 6 -x 2250 -y 550 -defaultsOSRD
+preplace inst PCMUX -pg 1 -lvl 9 -x 3150 -y 370 -defaultsOSRD
+preplace inst DR_MUX -pg 1 -lvl 2 -x 770 -y 40 -defaultsOSRD
+preplace inst IR_11_9 -pg 1 -lvl 1 -x 370 -y 90 -defaultsOSRD
+preplace inst seven -pg 1 -lvl 1 -x 370 -y 190 -defaultsOSRD
+preplace inst SR1_MUX -pg 1 -lvl 2 -x 770 -y 190 -defaultsOSRD
+preplace inst IR_8_6 -pg 1 -lvl 1 -x 370 -y 290 -defaultsOSRD
+preplace inst ONE -pg 1 -lvl 1 -x 370 -y 1660 -defaultsOSRD
+preplace inst BEN_LOGIC -pg 1 -lvl 3 -x 1100 -y 1070 -defaultsOSRD
+preplace inst BEN -pg 1 -lvl 4 -x 1380 -y 1050 -defaultsOSRD
+preplace inst BEN_SLICE -pg 1 -lvl 5 -x 1670 -y 1050 -defaultsOSRD
+preplace inst clock_divider -pg 1 -lvl 1 -x 370 -y -300 -defaultsOSRD
+preplace inst MAR_LSB -pg 1 -lvl 1 -x 370 -y 1140 -defaultsOSRD
+preplace inst rst_clk_100MHz_100M -pg 1 -lvl 1 -x 370 -y -50 -defaultsOSRD
+preplace inst IR_5 -pg 1 -lvl 5 -x 1670 -y 290 -defaultsOSRD
+preplace inst IR_2_0 -pg 1 -lvl 1 -x 370 -y 390 -defaultsOSRD
+preplace inst SEXT10 -pg 1 -lvl 2 -x 770 -y 780 -defaultsOSRD
+preplace inst LSHF1 -pg 1 -lvl 7 -x 2550 -y 560 -defaultsOSRD
+preplace inst ADD_TWO -pg 1 -lvl 11 -x 3710 -y 360 -defaultsOSRD
+preplace inst CC_LOGIC -pg 1 -lvl 1 -x 370 -y 1020 -defaultsOSRD
+preplace inst SHIFTER -pg 1 -lvl 2 -x 770 -y -230 -defaultsOSRD
+preplace inst bus_driver_0 -pg 1 -lvl 12 -x 4040 -y 350 -defaultsOSRD
+preplace inst mdr_out_logic_0 -pg 1 -lvl 8 -x 2840 -y 1200 -defaultsOSRD
+preplace inst MDR_IN_LOGIC -pg 1 -lvl 2 -x 770 -y 1170 -defaultsOSRD
+preplace inst SEXT5 -pg 1 -lvl 2 -x 770 -y 570 -defaultsOSRD -resize 180 88
+preplace netloc ADDR2MUX_result 1 6 1 N 550
+preplace netloc ADDR_ADDER_result 1 8 1 3030 390n
+preplace netloc ADD_TWO_out 1 8 1 N 350
+preplace netloc ALU_result 1 7 5 2680J 200 NJ 200 3280J 420 NJ 420 3840
+preplace netloc CONTROL_STORE_douta 1 2 3 930 1810 NJ 1810 N
+preplace netloc IR_result 1 0 5 -50 -150 550 280 910 380 1260 290 N
+preplace netloc MARMUX_result 1 9 3 3310J 220 NJ 220 3870
+preplace netloc MAR_result 1 0 8 -30 1420 540 1440 930 1380 N 1380 N 1380 N 1380 N 1380 2690
+preplace netloc MDR_IN_LOGIC_result 1 2 4 N 1170 N 1170 N 1170 2040
+preplace netloc MDR_result 1 7 1 2700 1180n
+preplace netloc MEMORY_douta 1 5 3 2100 1390 N 1390 2680
+preplace netloc MICROINSTRUCTION_addr1_mux 1 5 2 2070 750 NJ
+preplace netloc MICROINSTRUCTION_addr2_mux 1 5 1 2050 510n
+preplace netloc MICROINSTRUCTION_aluk 1 5 2 2000 140 2370J
+preplace netloc MICROINSTRUCTION_cond 1 1 5 580 1480 NJ 1480 NJ 1480 N 1480 1850
+preplace netloc MICROINSTRUCTION_data_size 1 1 7 600 1450 NJ 1450 NJ 1450 N 1450 2100 1400 2420 1260 2710
+preplace netloc MICROINSTRUCTION_gate_alu 1 5 7 1940 300 2370J 270 NJ 270 2970J 220 3300J 210 NJ 210 3830J
+preplace netloc MICROINSTRUCTION_gate_marmux 1 5 7 1980 330 NJ 330 NJ 330 2960J 150 NJ 150 NJ 150 3900J
+preplace netloc MICROINSTRUCTION_gate_mdr 1 5 7 1950 340 NJ 340 2670J 160 NJ 160 NJ 160 NJ 160 3860J
+preplace netloc MICROINSTRUCTION_gate_pc 1 5 7 1960 350 NJ 350 NJ 350 2980J 180 NJ 180 NJ 180 3880J
+preplace netloc MICROINSTRUCTION_gate_shf 1 5 7 2030 360 NJ 360 2700J 170 NJ 170 NJ 170 NJ 170 3890J
+preplace netloc MICROINSTRUCTION_ird 1 1 5 590 1490 NJ 1490 NJ 1490 N 1490 1830
+preplace netloc MICROINSTRUCTION_j 1 1 5 600 1500 NJ 1500 NJ 1500 N 1500 1840
+preplace netloc MICROINSTRUCTION_ld_cc 1 1 5 580 1250 NJ 1250 NJ 1250 N 1250 1880
+preplace netloc MICROINSTRUCTION_ld_ir 1 0 6 -60 -160 NJ -160 NJ -160 NJ -160 N -160 1900
+preplace netloc MICROINSTRUCTION_ld_mar 1 0 6 -20 1460 NJ 1460 NJ 1460 NJ 1460 N 1460 1860
+preplace netloc MICROINSTRUCTION_ld_mdr 1 5 2 2040 1290 2390J
+preplace netloc MICROINSTRUCTION_ld_pc 1 5 5 1990 420 NJ 420 NJ 420 3020J 270 3270J
+preplace netloc MICROINSTRUCTION_ld_reg 1 2 4 960J 390 NJ 390 N 390 1890
+preplace netloc MICROINSTRUCTION_lshf1 1 5 2 2080 680 2420J
+preplace netloc MICROINSTRUCTION_mar_mux 1 5 4 2060 660 2370J 470 NJ 470 2970J
+preplace netloc MICROINSTRUCTION_mio_en 1 5 1 2090 1220n
+preplace netloc MICROINSTRUCTION_pc_mux 1 5 4 1970 310 NJ 310 NJ 310 3010J
+preplace netloc MICROINSTRUCTION_r_w 1 1 5 560 2120 NJ 2120 NJ 2120 N 2120 1830
+preplace netloc MIO_EN_result 1 6 1 N 1200
+preplace netloc Net 1 0 9 -40 600 590 290 950 370 N 370 N 370 1930 320 N 320 N 320 2990
+preplace netloc PCMUX_result 1 9 1 3320 320n
+preplace netloc PC_result 1 6 6 2430 280 2690 190 N 190 N 190 3590 300 N
+preplace netloc SEXT8_out 1 2 4 940 570 N 570 N 570 N
+preplace netloc SHIFTER_out 1 11 1 N 340
+preplace netloc SR2MUX_result 1 6 1 2370 210n
+preplace netloc WE_LOGIC_we0 1 2 4 N 1370 N 1370 N 1370 2010
+preplace netloc WE_LOGIC_we1 1 2 4 N 1350 N 1350 N 1350 2020
+preplace netloc ZEXT_LSHF1_result 1 2 7 NJ 910 N 910 N 910 2020 670 2390 480 N 480 2960
+preplace netloc cc_logic_0_out 1 1 1 N 1050
+preplace netloc lshf1_0_out 1 7 1 N 560
+preplace netloc mdr_out_logic_0_result 1 8 4 3000 210 3290J 200 NJ 200 3850J
+preplace netloc microsequencer_0_next_state 1 2 1 930 1650n
+preplace netloc mux_2_0_result 1 7 1 2700 580n
+preplace netloc reg_file_0_sr1_out 1 3 4 1230 130 N 130 N 130 2400
+preplace netloc sext_10_0_out 1 2 4 960 590 N 590 N 590 N
+preplace netloc sext_5_0_out 1 2 4 920 550 N 550 N 550 N
+preplace netloc xlconcat_0_dout 1 6 2 2400 1460 N
+preplace netloc xlconstant_0_dout 1 2 7 N 460 N 460 N 460 2040 650 2380 490 2720 410 N
+preplace netloc DR_MUX_result 1 2 1 940 40n
+preplace netloc MICROINSTRUCTION_dr_mux 1 1 5 600 -50 NJ -50 NJ -50 N -50 1920
+preplace netloc xlslice_0_Dout 1 1 1 590 20n
+preplace netloc seven_dout 1 1 1 540 40n
+preplace netloc SR1_MUX_result 1 2 1 920 190n
+preplace netloc IR_11_10_Dout 1 1 1 560 190n
+preplace netloc MICROINSTRUCTION_sr1_mux 1 1 5 600 270 910J 140 NJ 140 N 140 1910
+preplace netloc xlconstant_0_dout1 1 1 1 N 1660
+preplace netloc CC_result 1 2 1 900 1030n
+preplace netloc BEN_LOGIC_ben 1 3 1 N 1070
+preplace netloc MICROINSTRUCTION_ld_ben 1 3 3 1250 1130 NJ 1130 1870
+preplace netloc BEN_result 1 4 1 N 1050
+preplace netloc BEN_SLICE_Dout 1 1 5 570 1470 NJ 1470 NJ 1470 NJ 1470 1850
+preplace netloc clock_divider_clk_1hz 1 0 10 -50 610 580J -40 930J 450 1240J 450 NJ 450 NJ 450 2410J 450 2710J 280 2990J 260 3290
+preplace netloc xlslice_0_Dout1 1 1 7 540 1280 N 1280 N 1280 N 1280 N 1280 N 1280 2720
+preplace netloc clk_100MHz_1 1 0 1 -70 -310n
+preplace netloc rst_clk_100MHz_100M_peripheral_aresetn 1 0 2 -60 -170 540J
+preplace netloc reset_rtl_0_1 1 0 1 N -70
+preplace netloc SEXT4_result 1 2 4 N 360 1250J 220 NJ 220 NJ
+preplace netloc REG_FILE_sr2_out 1 3 3 1240 200 NJ 200 NJ
+preplace netloc IR_5_Dout 1 5 1 1930 240n
+preplace netloc IR_2_0_Dout 1 1 2 600 300 NJ
+levelinfo -pg 1 -90 370 770 1100 1380 1670 2250 2550 2840 3150 3470 3710 4040 4190
+pagesize -pg 1 -db -bbox -sgen -170 -550 4190 2150
 "
 }
 {
-   "da_board_cnt":"8",
-   "da_clkrst_cnt":"9"
+   "da_board_cnt":"9",
+   "da_clkrst_cnt":"10"
 }

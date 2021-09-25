@@ -23,11 +23,11 @@
 module lshf1(
     input [15:0] in0,
     input lshf1,
-    output [15:0] out
+    output [15:0] result
     );
     
     // if lshf1 is zero then pass output if it is 1 then pass a left shifted value
     
-    assign out = lshf1 ? in0 << 1 : in0;
+    assign result = lshf1 ? in0 << 1 : in0;
     
 endmodule

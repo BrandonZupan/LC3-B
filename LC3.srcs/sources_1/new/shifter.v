@@ -21,30 +21,30 @@
 
 
 module shifter(
-    input wire signed [15:0] in,
+    input wire signed [15:0] in0,
     input [5:0] ir,
-    output reg [15:0] out
+    output reg [15:0] result
     );
     
-    always @(in, ir) begin
+    always @(in0, ir) begin
     
         // if (!ir[4] && !ir[5]) begin
         if ((ir[4] == 0) && (ir[5] == 0)) begin
             // left shift
-            out = in << ir[3:0];
+            result = in0 << ir[3:0];
             
             
             end
         //else if (ir[4] && ir[5]) begin
         else if ((ir[4] == 1) && (ir[5] == 0)) begin
             // right shift
-            out = in >> ir[3:0];
+            result = in0 >> ir[3:0];
             
             
             end
         else begin
             // arithmetic right shift
-            out = in >>> ir[3:0];
+            result = in0 >>> ir[3:0];
             
             end
         
